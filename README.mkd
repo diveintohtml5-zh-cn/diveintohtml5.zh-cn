@@ -1,0 +1,29 @@
+
+# Dive Into HTML5 中文翻译
+
+目前国内 HTML5 的中文资讯非常少，网络上也能找到零星的一些不完整的翻译，
+很少能找到完整的翻译，很多也没有详细的翻译进度及计划。最重要的，每个译者
+都只是作为自己的爱好进行，并发布在自己的博客或论坛上，大家的翻译工作都
+散布是不同的角落。
+
+这个项目作为 [Dive Into HTML5](http://diveintohtml5.org/) 的中文翻译计划，
+主要致力于翻译完整的 Dive Into HTML5 这本书，并尽量保证在样式风格上一致，
+和翻译质量上负责。
+
+项目将邀请多位曾经，或者正在翻译这本书的爱好者一起进行，也欢迎各位爱好者
+加入。
+
+## 加入方法
+
+请自行 fork 这个项目，可以逐步 pull 到主干。
+
+## See Also
+* [Dive Into HTML5](http://diveintohtml5.org/)
+* [澄净的禅院#HTML5](http://zhaojing.me/?cat=6)
+* [畅游 HTML5(Dive Into HTML5 中文版)](http://www.diveintohtml5.com/)， [畅游 HTML5 （DIVE INTO HTML5 中文版）](http://ioio.name/dive-into-html5-cn.html)
+* [Dive Into HTML5—第一部分（视频和音频）中文](http://www.fuzhijie.me/?p=124)
+* [diveintohtml5.it](https://github.com/alieb/diveintohtml5.it)
+
+原版书的代码可以从这里下载：
+
+    hg clone http://hg.diveintohtml5.org/ diveintohtml5
