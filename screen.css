@@ -296,14 +296,14 @@ code, var, samp {
 /* headers */
 
 h1, h2, h3, h4, caption, thead th {
-  font-family: "Essays 1743", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+  font-family: "Essays 1743", \5FAE\8F6F\96C5\9ED1, \5E7C\5706, \5FAE\8F6F\6B63\9ED1\4F53, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
   font-weight: normal;
   text-transform: uppercase;
   text-shadow: 0 0 1px #667;
 }
 h1 {
   font-size: 266.7%;
-  line-height: 1.1;
+  line-height: 1.6;
   text-align: center;
   width: 100%;
   margin: 1.49em 0;
@@ -370,3 +370,4 @@ tfoot {
 .zebra {
   background: #eee;
 }
+small{border-bottom:1px dashed #ccc; color:#999;}
