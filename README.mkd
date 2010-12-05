@@ -15,7 +15,59 @@
 
 ## 加入方法
 
-请自行 fork 这个项目，可以逐步 pull 到主干。
+I. 请自行 fork 这个项目，可以逐步 pull 到主干。
+
+1. 登录 github。
+2. 点击这个项目上面的 Fork 按钮。
+3. `git clone git@github.com:${YOUACCOUNT}/diveintohtml5.zh-cn.git`
+4. 翻译。
+5. `git add .`
+6. `git commit -m "UPDATE: somthing."`
+7. `git push origin master`
+
+推荐看 《[Pro Git](http://progit.org/book/zh/)》，这里也可以找到一些
+[相关的资料](http://wiki.hotoo.me/Git.html)。
+
+II. 或者可以邮件告诉我你对这个项目感兴趣，希望加入的话，请告诉我你的 github
+账户 ID。
+
+将你的 ID 加入到 diveintohtml5-zh-cn 组织的成员里之后，你就可以使用自己的账户
+直接 push 到 https://github.com/diveintohtml5-zh-cn/diveintohtml5.zh-cn 项目了，
+无需 Frok。
+
+III. 邮件告诉我们你发现的错误或者任何有异议的内容，我们会认真考虑你的意见，感谢你。
+
+
+## 翻译规范
+* 保留首字母下沉的图片，但翻译要考虑完整的语句。
+* 尽量使用中文标点符号。另外原书中使用的 HTML 实体中，
+    `&#8220;` 对应的是中文左双引号(“)，
+    `&#8221;` 对应的是中文右双引号(”)，
+    `&mdash;` 对应的是中文横线(——)中的单条，
+    前面这些都可以直接使用中文原始符号，而无需使用 HTML 实体。
+    在 Vim 中你可以分别使用以下命令批量替换：
+    `%s/&#8220;/“/g`，`%s/&#8221;/”/g`，和 `%s/&mdash;/—/g`。
+* 原著作者偷懒使用了类似 `&lt;img>` 这样代码来显示标签，我们建议使用完整的 `&lt;img&gt;`。
+    注意：这个不用全局替换。
+* 对于不确定处，请写上 `<small>（商榷：译者的理由）</small>` 这样的标记。
+* 对于第二人称(you)之类的词，考虑是否可以省略，或者使用更合适的代称。
+
+另外，我个人觉得作者有些啰嗦，一句话反复的说，例如第二章里的
+    “Images have their own MIME types (image/jpeg for JPEG images, image/png for PNG images, and so on). JavaScript files have their own MIME type. CSS stylesheets have their own MIME type. Everything has its own MIME type. The web runs on MIME types.”，
+    “These people are not gods, nor are they flawless. They’re just people. Smart people, to be sure. But just people.”，
+    好多的重复性排比（也可以说是一句话反复说 N 遍），可以视情况进行压缩翻译。
+
+
+## 版权
+这份译稿除了原著作者和译者们的荣耀之外，不保留任何版权。**注意：禁止商业出版。**
+这份译稿不考虑印刷出版，只作为一个兴趣项目。如果你不喜欢在显示器上阅读，可以考虑
+自行打印本书，但是禁止商业出版。
+
+欢迎参与，传播、推广与分发。
+
+另外，我已经跟 [diveintohtml5.com](http://diveintohtml5.com/) 的译者联系，
+枯藤昏鸦 同意我们使用他翻译的部分内容，这里感谢他作出的贡献。
+
 
 ## See Also
 * [Dive Into HTML5](http://diveintohtml5.org/)
