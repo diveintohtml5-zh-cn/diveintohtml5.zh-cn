@@ -53,9 +53,9 @@ III. 邮件告诉我们你发现的错误或者任何有异议的内容，我们
 * 对于第二人称(you)之类的词，考虑是否可以省略，或者使用更合适的代称。
 
 另外，我个人觉得作者有些啰嗦，一句话反复的说，例如第二章里的
-    “Images have their own MIME types (image/jpeg for JPEG images, image/png for PNG images, and so on). JavaScript files have their own MIME type. CSS stylesheets have their own MIME type. Everything has its own MIME type. The web runs on MIME types.”，
-    “These people are not gods, nor are they flawless. They’re just people. Smart people, to be sure. But just people.”，
-    好多的重复性排比（也可以说是一句话反复说 N 遍），可以视情况进行压缩翻译。
+“Images have their own MIME types (image/jpeg for JPEG images, image/png for PNG images, and so on). JavaScript files have their own MIME type. CSS stylesheets have their own MIME type. Everything has its own MIME type. The web runs on MIME types.”，
+“These people are not gods, nor are they flawless. They’re just people. Smart people, to be sure. But just people.”，
+好多的重复性排比（也可以说是一句话反复说 N 遍），可以视情况进行压缩翻译。
 
 
 ## 版权
