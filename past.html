@@ -30,7 +30,7 @@ body{counter-reset:h1 1}
 
 <h2 id=mime-types>MIME 类型</h2>
 
-<p>这一本是关于 <abbr>HTML5</abbr> 的书，不是关于以前的 <abbr>HTML</abbr> 的，也不是其他任何版本的 <abbr>XHTML</abbr> 的。如果想要理解 <abbr>HTML5</abbr> 的历史及其背后的动机，你还得对一些技术细节有所了解。尤其是 <abbr>MIME</abbr> 类型。
+<p>这一本是关于 <abbr>HTML5</abbr> 的书，不是关于以前的 <abbr>HTML</abbr> 的，也不是关于任何版本的 <abbr>XHTML</abbr> 的。如果想要理解 <abbr>HTML5</abbr> 的历史及其背后的动机，你还得对一些技术细节有所了解。尤其是 <abbr>MIME</abbr> 类型。
 
 <p>每当 Web 浏览器请求一个页面时，Web 服务器会在发送实际的页面标记之前发送一些头信息。这些头信息通常是不可见的，但是如果你感兴趣的话，有一些网页开发工具可以使他们可见。尽管这些头信息不可见，但是它们却非常重要，它们会告诉浏览器如何解读接下来的页面标记。最重要的头信息称之为 <code>Content-Type</code>，它是这样的：
 
@@ -46,32 +46,32 @@ body{counter-reset:h1 1}
 
 <h2 id=history-of-the-img-element>关于标准是如何建立的长篇题外话</h2>
 
-<p class=ss><img src=i/openclipart.org_johnny_automatic_monkey_reading.png width=365 height=396 alt="monkey reading a book">
+<p class=ss><img src=i/openclipart.org_johnny_automatic_monkey_reading.png width=365 height=396 alt="正在读书的猴子">
 
-<p>为什么我们有一个 <code>&lt;img&gt;</code> 元素的？你每天听到的这些已经不是问题了，显然，有人就是需要它。这些东西已经随处可见了。任何元素，任何属性，任何你使用的 <abbr>HTML</abbr> 特性 — 某人创建了他们，决定它们怎么工作，并写下他们。这些人不是上帝，他们也并不是完美无瑕。他们只是普通人，虽然是聪明人，但也只是人（好啰嗦 --闲耘）。
+  <p>为什么会有一个 <code>&lt;img&gt;</code> 元素？你每天听到的这些已经不是问题了，显然，<em>有人</em>已经创造了它。这些东西不是凭空冒出来的。任何元素，任何属性，任何你使用的 <abbr>HTML</abbr> 特性 — 有人创建了他们，决定它们怎么工作，并写下他们。这些人不是上帝，他们也并不是完美无瑕。他们只是普通人。准确地说是聪明人，但也只是人。
 
-<p>标准一般都有非常棒的开放性，你可以回到过去并找到这类问题的答案，讨论过程也都在邮件列表中，一般都有存档可以公开搜索。所以我决定做一次“电子邮件考古”，尝试回答这个问题，即“为什么我们有一个 <code>&lt;img&gt;</code> 元素？”我到一个名为万维网联盟(<abbr>W3C</abbr>)的组织那里，回到了 Web 的最早期，那时 Web 服务器甚至可以用双手的手指头数的过来，大不了再加上你的脚趾头。
+<p>标准的一个非常棒的地方是，它们的发展过程是开放的。你可以回到过去找寻这类问题的答案。在邮件列表中可以找到相关讨论，这些通常有可以公开搜索的存档。所以我决定做一次“电子邮件考古”，尝试回答这个问题，即“为什么我们有一个 <code>&lt;img&gt;</code> 元素？”我回到了尚未有一个名为万维网联盟(<abbr>W3C</abbr>)的组织存在的时代，回到了 Web 的最早期，那时 Web 服务器的数目可以用双手的手指头数的过来，大不了再加上你的脚趾头。
 
 <p><i>（下面的引用有一些错别字，但我决定完整地保留他们，以保证历史的准确性。）</i>
 
-<p>1993年 2月 25日, <a href="http://1997.webhistory.org/www.lists/www-talk.1993q1/0182.html"><cite>Marc Andreessen</cite> 写道</a>：
+<p>1993年 2月 25日，<a href="http://1997.webhistory.org/www.lists/www-talk.1993q1/0182.html"><cite>Marc Andreessen</cite> 写道</a>：
 
 <blockquote cite="http://1997.webhistory.org/www.lists/www-talk.1993q1/0182.html">
 <p>我提议新增一个可选的 HTML 标记：
 <p>IMG
-<p>必须的参数（属性）是 <code>SRC="url"</code>。
-<p>它为浏览器指定一个位图或位图文件，并尝试去广域网或局域网上请求与解释这个图片，最终嵌入图片到标签所在的文本位置。
+<p>必须的参数是 <code>SRC="url"</code>。
+<p>它指定一个位图文件，让浏览器尝试通过网络获取，并解释为一个图片，将其嵌入到标签所在的文本位置。
 <p>例如：
 <p><code>&lt;IMG SRC="file://foobar.com/foo/bar/blargh.xbm"&gt;</code>
-<p>（这里没有关闭的标签，它仅仅是一个独立的标签。）
-<p>像任何其他的标签一样，这个标签也可以嵌入在链接里面；这时候，像普通的文本链接一样，图标也会成为一个可激活的敏感的区域。
-<p>浏览器应该提供图片格式支持的灵活性。Xbm 和 Xpm 就是可以去支持的一个很好的例子。假如浏览器无法解释获得的文件格式，浏览器可以用它希望的任何替代方式来处理（X Mosaic 将弹出一个默认位图来作为占位符）。
-<p>这是 X Mosaic 必须的功能，我们也正在为这个进行工作，并且我们将至少会在内部使用它。当然我也接受关于在 HTML 中如何进行处理的建议，如果你有比我现在介绍的这个更好的主意，请告诉我。我知道在图片格式方面还不是很清晰，但我不能坐视说“让浏览器做他能做的”，然后等待完美解决方案的到来（MIME, someday, maybe）。
+<p>（这里没有关闭标签，它是一个单独的标签。）
+<p>像任何其他的标签一样，这个标签也可以嵌入在链接里面；这种情况下，像普通的文本链接一样，它成为一个可激活的图标。
+<p>浏览器应该有选择它所支持的图片格式的灵活性。比如，Xbm 和 Xpm 就是很好的可支持的格式。假如浏览器无法解释某个文件格式，浏览器可以用它希望的任何替代方式来处理（X Mosaic 将显示一个默认位图来作为占位符）。
+<p>这是 X Mosaic 必须的功能，我们也正在为这个进行工作，并且我们至少将会在内部使用它。当然我也接受关于在 HTML 中如何处理此事的建议，如果你有比我现在介绍的这个更好的主意，请告诉我。我知道在图片格式方面还不是很清晰，但我没有其它办法，除了让浏览器做他能做的，然后等待完美解决方案的到来（MIME，某天，也许吧）。
 </blockquote>
 
-<p><a href="http://en.wikipedia.org/wiki/X_BitMap">Xbm</a> 和 <a href="http://en.wikipedia.org/wiki/X_PixMap">Xpm</a> 是 Unix 系统上流行的图像格式。
+<p><a href="http://en.wikipedia.org/wiki/X_BitMap">Xbm</a> 和 <a href="http://zh.wikipedia.org/wiki/X_Pixmap">Xpm</a> 是 Unix 系统上流行的图像格式。
 
-<p>“Mosaic”是最早的 web 浏览器（“X Mosaic”是其运行在 Unix 系统上的版本）。当他在 1993 年初写下上面的消息时，<a href="http://en.wikipedia.org/wiki/Marc_Andreessen">Marc Andreessen</a> 还没有创立那家让他一举成名的公司：<a href="http://en.wikipedia.org/wiki/Mosaic_Communications_Corporation">Mosaic Communications Corporation</a>，也没有开始为公司的那款旗舰产品进行工作，“Mosaic Netscape”。（你也许更清楚他们最后的名字“Netscape Corporation”和“Netscape Navigator”）。
+<p>“Mosaic”是最早的 web 浏览器之一（“X Mosaic”是其运行在 Unix 系统上的版本）。当他在 1993 年初写下上面的消息时，<a href="http://en.wikipedia.org/wiki/Marc_Andreessen">Marc Andreessen</a> 还没有创立那家让他一举成名的公司——<a href="http://zh.wikipedia.org/wiki/%E7%B6%B2%E6%99%AF">马赛克通信公司(Mosaic Communications Corporation)</a>，也没有开始为公司的那款旗舰产品进行工作，“Mosaic Netscape”。（你也许更清楚他们后来的名字“网景公司(Netscape Corporation)”和“网景浏览器(Netscape Navigator)”）。
 
 <p>“MIME, someday, maybe” is a reference to <a href="http://en.wikipedia.org/wiki/Content_negotiation">content negotiation</a>, a feature of HTTP where a client (like a web browser) tells the server (like a web server) what types of resources it supports (like <code>image/jpeg</code>) so the server can return something in the client&#8217;s preferred format. <a href="http://www.w3.org/Protocols/HTTP/AsImplemented.html">The Original HTTP as defined in 1991</a> (the only version that was implemented in February 1993) did not have a way for clients to tell servers what kinds of images they supported, thus the design dilemma that Marc faced.
 
