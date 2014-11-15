@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<title>畅游 HTML 5 (Dive Into HTML 5 中文版)</title>
+<link rel="shortcut icon" href=favicon.ico>
+<link rel=alternate type=application/atom+xml href=https://github.com/diveintohtml5-zh-cn/diveintohtml5.zh-cn/commits/master.atom>
+<link rel=stylesheet href=screen.css>
+<style>
+h1:before{content:''}
+h1,h2,h3{padding:0;margin:0;border:0;line-height:128px;text-align:center;clear:both}
+h1{margin-top:128px;font-size:64px;text-transform:uppercase}
+h2{font-size:32px}
+ol{margin:1em 0 0 0;padding:0}
+li{clear:both;width:100%;margin:0 0 1em 0;padding:0;overflow:hidden}
+.title,.number{background:#fff}
+.title{float:left;padding-right:3px}
+.number{margin:0;float:right;padding-left:3px}
+.f{margin-top:6.224em}
+</style>
+<link rel=stylesheet media='only screen and (max-device-width: 480px)' href=mobile.css>
+<link rel=prefetch href=introduction.html>
+<hgroup>
+<h1>畅游 HTML 5 </h1>
+<h3>(Dive Into HTML 5 中文版)</h3>
+<h2>Mark Pilgrim 著</h2>
+<h2><a href="https://github.com/diveintohtml5-zh-cn">Dive Into HTML5 中文小组</a> 译</h2>
+<h3>插图来自公共领域</h3>
+</hgroup>
+
+<p class=a>&#x2767;
+
+<p class=f><img src=i/aoc-d.png alt=D width=104 height=105>畅游 <abbr>HTML5</abbr>
+旨在对一些从 <a href=http://www.whatwg.org/html5>HTML5</a> 规范和其他优良的标准之中精选出的特性作出详细说明。
+最后的手稿将由 O’Reilly 通过 Google Press 以纸质的形式出版。<a href="http://www.amazon.com/HTML5-Up-Running-Mark-Pilgrim/dp/0596806027?ie=UTF8&amp;tag=diveintomark-20&amp;creativeASIN=0596806027">预订此书</a> — 书名是《HTML5: Up <i class=baa>&amp;</i> Running》 — 成为你的社区中第一个拥有它的人。<a href=about.html>请予以反馈</a>。
+该著作将以 <a rel=license href=http://creativecommons.org/licenses/by/3.0/>创作共用署名（CC-BY-3.0）</a> 许可保留在线版本。
+
+<h3>目录</h3>
+
+<!-- toc -->
+<ol>
+<li><a href=introduction.html>简介：关于 <abbr>HTML5</abbr> 你需要知道的 5 件事</a>
+<li><a href=past.html><abbr>HTML5</abbr> 的颠簸史</a>
+<li><a href=detect.html><abbr>HTML5</abbr> 特性的检测</a>
+<li><a href=semantics.html>它意味着什么?</a>
+<li><a href=canvas.html>画布</a>
+<li><a href=video.html>视频</a>
+<li><a href=geolocation.html>地理位置</a>
+<li><a href=storage.html>本地存储</a>
+<li><a href=offline.html>离线存储</a>
+<li><a href=forms.html>疯狂的表单</a>
+<li><a href=extensibility.html>“分布式”、“扩展性” 和其他的花哨辞藻</a>
+<li><a href=everything.html>附录</a>
+<li><a href=peeks-pokes-and-pointers.html><abbr>HTML5</abbr> 速查手册</a>
+</ol>
+<!-- /toc -->
+
+<p class=a>&#x2767;
+
+<p class=c>“如果你擅长做某事，不要无偿去做它。”<span class=u>—</span><cite>小丑</cite><br>(但这不意味着你应该一个人占有它)
+
+<p class=c>Copyright MMIX&ndash;MMX <a href=about.html>Mark Pilgrim</a>
+
+<form action=http://www.google.com/cse><div><input type=hidden name=cx value=014021643941856155761:6jgee_nxreo><input type=hidden name=ie value=UTF-8><input type=search name=q size=25 placeholder="powered by Google&trade;">&nbsp;<input type=submit name=sa value=搜索></div></form>
+<script src=j/jquery.js></script>
+<script src=j/dih5.js></script>
+<script>
+$(document).ready(function() {
+  $("ol").css("list-style", "none");
+  $("li").each(function(i) {
+    $(this).wrapInner('<span class=title></span>').append('<span class=number>'+i+'</span>').css("background", "#fff url(i/dot.png) repeat-x 0 0.8em");
+  });
+});
+</script>

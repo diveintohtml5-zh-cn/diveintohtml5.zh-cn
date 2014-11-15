@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <meta charset=utf-8>
-<title>Five Things You Should Know About HTML5 - Dive Into HTML5</title>
+<title>关于 HTML5 你需要知道的 5 件事</title>
 <!--[if lt IE 9]><script src=j/html5.js></script><![endif]-->
 <link rel="shortcut icon" href=favicon.ico>
 <link rel=alternate type=application/atom+xml href=http://hg.diveintohtml5.org/hgweb.cgi/atom-log>
 <link rel=stylesheet href=screen.css>
 <style>
-h1:before{content:"Introduction:"}
+h1:before{content:"简介:"}
 h2{text-align:left;text-transform:inherit}
 </style>
 <link rel=stylesheet media='only screen and (max-device-width: 480px)' href=mobile.css>
 <link rel=prefetch href=past.html>
-<p>You are here: <a href=index.html>Home</a> <span class=u>&#8227;</span> <a href=table-of-contents.html#introduction>Dive Into <abbr>HTML5</abbr></a> <span class=u>&#8227;</span>
-<h1><br>Five Things You Should Know About HTML5</h1>
+<p>你的位置: <a href=index.html>首页</a> <span class=u>&#8227;</span> <a href=table-of-contents.html#introduction>畅游<abbr>HTML5</abbr></a> <span class=u>&#8227;</span>
+<h1>关于 HTML5 你需要知道的 5 件事</h1>
 <p id=toc>&nbsp;
 <p class=a>&#x2767;
-<h2 id=one>1. It&#8217;s not one big thing</h2>
+<h2 id=one>1. HTML5并不是什么'大东西'</h2>
 
 <p style="float:right;margin:0 0 1.75em 1.75em"><img src=i/video.png alt="[mock video player]" width=226 height=166>
 
-<p>You may well ask: &#8220;How can I start using <abbr>HTML5</abbr> if older browsers don&#8217;t support it?&#8221; But the question itself is misleading. <abbr>HTML5</abbr> is not one big thing; it is a collection of individual features. So you can&#8217;t detect &#8220;<abbr>HTML5</abbr> support,&#8221; because that doesn&#8217;t make any sense. But you <em>can</em> detect support for individual features, like canvas, video, or geolocation.
+<p>你可能会问: &#8220;如果旧浏览器不兼容HTML5，我要怎么开始用 <abbr>HTML5</abbr>呢？&#8221;。 但这个问题本身就不正确。因为<abbr>HTML5</abbr> 并不是什么'大东西'; 它只不过是新特性的集合罢了。 所以你不能说浏览器是否支持 &#8220;<abbr>HTML5</abbr> ,&#8221; 这是不对的。 但你 <em>可以</em> 检测浏览器是否支持某些特性, 比如: canvas, video, 或者 geolocation。
 
-<p>You may think of <abbr>HTML</abbr> as tags and angle brackets. That&#8217;s an important part of it, but it&#8217;s not the whole story. The <abbr>HTML5</abbr> specification also defines how those angle brackets interact with JavaScript, through the Document Object Model (<abbr>DOM</abbr>). <abbr>HTML5</abbr> doesn&#8217;t just define a <code>&lt;video></code> tag; there is also a corresponding <abbr>DOM</abbr> <abbr>API</abbr> for video objects in the <abbr>DOM</abbr>. You can use this <abbr>API</abbr> to detect support for different video formats, play a video, pause, mute audio, track how much of the video has been downloaded, and everything else you need to build a rich user experience around the <code>&lt;video></code> tag itself.
+<p>你可能认为 <abbr>HTML</abbr> 就是标签和一堆尖括号。那确实是很重要的一部分, 但那可不是全部。在<abbr>HTML5</abbr>中也定义了它们是怎么和Javascript在文档模型 (<abbr>DOM</abbr>)中交互的。 但<abbr>HTML5</abbr> 并不只是定义了 <code>&lt;video></code> 这样的标签; 它也定义了很多用来操作这些vedio元素的 <abbr>DOM</abbr> <abbr>API</abbr>。你可以用这些 <abbr>API</abbr>来播放视频，暂停视频，静音，检查视频下载进度，检测浏览器是否支持某种视频格式，等等..还有很多用<code>&lt;video></code>标签来增强用户体验的事情。
 
-<p><a href=detect.html>Chapter 2</a> and <a href=everything.html>Appendix A</a> will teach you how to properly detect support for each new <abbr>HTML5</abbr> feature.
+<p><a href=detect.html>第二章</a> 和 <a href=everything.html>附录 A</a> 会告诉你如何去检测浏览器对各种新 <abbr>HTML5</abbr> 特性的兼容性。
 
-<h2 id=two>2. You don&#8217;t need to throw anything away</h2>
+<h2 id=two>2. 不需要抛弃任何东西</h2>
 
 <p style="float:left;margin:0 1.75em 1.75em 0"><img src=i/forms.png alt="[sample form controls]" width=134 height=196>
 
-<p>Love it or hate it, you can&#8217;t deny that <abbr>HTML</abbr> 4 is the most successful markup format ever. <abbr>HTML5</abbr> builds on that success. You don&#8217;t need to throw away your existing markup. You don&#8217;t need to relearn things you already know. If your web application worked yesterday in <abbr>HTML</abbr> 4, it will still work today in <abbr>HTML5</abbr>. Period.
+<p>不管喜欢还是讨厌，你都不可否认<abbr>HTML</abbr> 4 是目前为止史上最成功的标记语言格式！ <abbr>HTML5</abbr> 不过是建立在HTML4成功的基础上罢了。你不需要丢掉因为任何现存的标记，你不需要重新去学HTML4中学过的东西。如果你的程序在 <abbr>HTML</abbr> 4下可以完美运行，那它在 <abbr>HTML5</abbr>中也不会有任何问题。目前来说是这样的。
 
-<p>Now, if you want to <em>improve</em> your web applications, you&#8217;ve come to the right place. Here&#8217;s a concrete example: <abbr>HTML5</abbr> supports all the form controls from <abbr>HTML</abbr> 4, but it also includes new input controls. Some of these are long-overdue additions like sliders and date pickers; others are more subtle. For example, the <code>email</code> input type looks just like a text box, but mobile browsers will customize their onscreen keyboard to make it easier to type email addresses. Older browsers that don&#8217;t support the <code>email</code> input type will treat it as a regular text field, and the form still works with no markup changes or scripting hacks. This means you can start improving your web forms <em>today</em>, even if some of your visitors are stuck on IE 6.
+<p>现在，如果你想要 <em>升级</em> 你的web程序，你算是来对地方了。这里有一个具体的例子： <abbr>HTML5</abbr>支持 <abbr>HTML</abbr> 4的所有控件，不过HTML5还有一些新的input控件：其中有一些是人们期待已久的东西，比如：滑动条(sliders)和日历(date pickers); 还有一些则是对现有的优化和替代， 例如,  <code>email</code> 看起来和原有的文本框(text)是一样的，但在移动浏览器中，键盘布局会对email地址的输入做优化。老浏览器可能不支持 <code>email</code> 类型的文本框，于是就把它当作普通的文本框来对待了，所以对老浏览器email依然适用，不需要做任何hack。 也就是说，你现在就可以把表单升级啦，即使有些访客还在用 IE 6也没关系。
 
-<p>Read all the gory details about <abbr>HTML5</abbr> forms in <a href=forms.html>Chapter 9</a>.
+<p>关于<abbr>HTML5</abbr> 表单的具体细节，请参见 <a href=forms.html>第 9 章</a>。
 
-<h2 id=three>3. It&#8217;s easy to get started</h2>
+<h2 id=three>3. HTML5很容易上手</h2>
 
 <p style="float:right;margin:0 0 1.75em 1.75em"><img src=i/markup-with-arrow.png alt="[sample HTML markup]" width=234 height=202>
 
-<p>&#8220;Upgrading&#8221; to <abbr>HTML5</abbr> can be as simple as changing your <i>doctype</i>. The doctype should already be on the first line of every <abbr>HTML</abbr> page. Previous versions of <abbr>HTML</abbr> defined a lot of doctypes, and choosing the right one could be tricky. In <abbr>HTML5</abbr>, there is only one doctype:
+<p>&#8220;升级&#8221; 到 <abbr>HTML5</abbr>非常简单，只要改变 <i>文档类型(doctype)</i>就可以了。 这个文档类型(doctype)节点必须放在在<abbr>HTML</abbr>文档的第一行中。 上个版本的 <abbr>HTML</abbr> 定义了一堆doctype，要选用正确的doctype可是非常严格的。但在 <abbr>HTML5</abbr>中，只有一种文档类型(doctype)，那就是:
 
 <blockquote>
 <p><code>&lt;!DOCTYPE html></code>
 </blockquote>
 
-<p>Upgrading to the <abbr>HTML5</abbr> doctype won&#8217;t break your existing markup, because all the tags defined in HTML 4 are still supported in <abbr>HTML5</abbr>. But it will allow you to use &mdash; and validate &mdash; new semantic elements like <code>&lt;article></code>, <code>&lt;section></code>, <code>&lt;header></code>, and <code>&lt;footer></code>. You&#8217;ll learn all about these new elements in <a href=semantics.html>Chapter 3</a>.
+<p>改成<abbr>HTML5</abbr>的文档类型(doctype)并不会对原有标签造成影响，因为HTML 4中的所有标签在<abbr>HTML5</abbr>中都是兼容的。但HTML5中，你还可以使用和检验一些新的语意标签，比如 <code>&lt;article></code>, <code>&lt;section></code>， <code>&lt;header></code>，还有 <code>&lt;footer></code>。你可以在 <a href=semantics.html>第 3 章</a>中了解到这些新标签。
 
-<h2 id=four>4. It already works</h2>
+<h2 id=four>4. HTML5已经可以工作啦</h2>
 
 <p style="float:left;margin:0 1.75em 1.75em 0"><img src=i/rel-email.png alt="[form field with onscreen keyboard]" width=227 height=192>
 
-<p>Whether you want to draw on a canvas, play video, design better forms, or build web applications that work offline, you&#8217;ll find that <abbr>HTML5</abbr> is already well-supported. Firefox, Safari, Chrome, Opera, and mobile browsers already support canvas (<a href=canvas.html>Chapter 4</a>), video (<a href=video.html>Chapter 5</a>), geolocation (<a href=geolocation.html>Chapter 6</a>), local storage (<a href=storage.html>Chapter 7</a>), and more. Google already supports microdata annotations (<a href=extensibility.html>Chapter 10</a>). Even Microsoft &mdash; rarely known for blazing the trail of standards support &mdash; will be supporting most <abbr>HTML5</abbr> features in the upcoming Internet Explorer 9.
+<p>不管是播放视频，更好用的表单，用来画画的canvas，还是创建离线App，现在HTML5都已经很好地支持了。Firefox, Safari, Chrome, Opera，以及诸多移动端浏览器都已支持这些HTML5新元素： canvas (<a href=canvas.html>第 4 章</a>), video (<a href=video.html>第 5 章</a>), geolocation (<a href=geolocation.html>第 6 章</a>), local storage (<a href=storage.html>第 7 章</a>), 等等。 谷歌现在已经支持微数据语意声明(microdata annotations) (<a href=extensibility.html>第 10 章</a>)。就连因标准支持问题被责怪多年的微软，也开始在新推出的Internet Explorer 9 中支持大部分 <abbr>HTML5</abbr>新特性了。 
 
 <p style="float:right;margin:0 0 1.75em 1.75em"><img src=i/gears.png alt="[Gears saying &quot;I can help&quot;]" width=125 height=75>
 
-<p>Each chapter of this book includes the all-too-familiar browser compatibility charts. But more importantly, each chapter includes a frank discussion of your options if you need to support older browsers. <abbr>HTML5</abbr> features like geolocation (<a href=geolocation.html>Chapter 6</a>) and video (<a href=video.html>Chapter 5</a>) were first provided by browser plugins like Gears or Flash. Other features, like canvas (<a href=canvas.html>Chapter 4</a>), can be emulated entirely in JavaScript. This book will teach you how to target the native features of modern browsers, without leaving older browsers behind.
+<p>本书中每章都包含了常见浏览器兼容表，不过更重要的是，每一章都给出了对老浏览器的支持的明确讨论。一些<abbr>HTML5</abbr> 特性，比如 geolocation (<a href=geolocation.html>第 6 章</a>) 和 video (<a href=video.html>第 5 章</a>) 一开始是通过插件支持的，比如 Gears 和 Flash这样的插件。 其他特性, 如： canvas (<a href=canvas.html>第 4 章</a>)，可以用JavaScript来整个模拟。 本书会教你如何在不抛弃老浏览器的情况下，使用新浏览器原生支持的HTML5新特性。
 
 
-<h2 id=five>5. It&#8217;s here to stay</h2>
+<h2 id=five>5. HTML5只是一个阶段 </h2>
 
-<p>Tim Berners-Lee invented the world wide web in the early 1990s. He later founded the <abbr>W3C</abbr> to act as a steward of web standards, which the organization has done for more than 15 years. Here is what the <abbr>W3C</abbr> had to say about the future of web standards, in July 2009:
+<p>90年代初，Tim Berners-Lee 发明了互联网(world wide web) 。他成立了 <abbr>W3C</abbr> 组织，这个组织从事Web标准管理已经超过15年了。  以下是 <abbr>W3C</abbr> 在2009年7月关于未来 web标准的描述:
 
 <blockquote cite=http://www.w3.org/News/2009#item119>
 <p>Today the Director announces that when the <abbr>XHTML</abbr> 2 Working Group charter expires as scheduled at the end of 2009, the charter will not be renewed. By doing so, and by increasing resources in the <abbr>HTML</abbr> Working Group, <abbr>W3C</abbr> hopes to accelerate the progress of <abbr>HTML5</abbr> and clarify <abbr>W3C</abbr>&#8217;s position regarding the future of <abbr>HTML</abbr>.
 </blockquote>
 
-<p><abbr>HTML5</abbr> is here to stay. <a href=past.html>Let&#8217;s dive in</a>.
+<p><abbr>HTML5</abbr> 只是漫漫长路中的一个阶段，它正停留在此处。<a href=past.html>现在让我们开始畅游吧</a>！
 
 <p class=a>&#x2767;
 
 <div class=pf>
-<h4>Did You Know?</h4>
+<h4>你知道吗？</h4>
 <div class=moneybags>
-<blockquote><p>In association with Google Press, O&#8217;Reilly is distributing this book in a variety of formats, including paper, ePub, Mobi, and <abbr>DRM</abbr>-free <abbr>PDF</abbr>. The paid edition is called &#8220;HTML5: Up &amp; Running,&#8221; and it is available now.
-<p>If you liked this introduction and want to show your appreciation, you can <a href="http://www.amazon.com/HTML5-Up-Running-Mark-Pilgrim/dp/0596806027?ie=UTF8&amp;tag=diveintomark-20&amp;creativeASIN=0596806027">buy &#8220;HTML5: Up &amp; Running&#8221; with this affiliate link</a> or <a href=http://oreilly.com/catalog/9780596806033>buy an electronic edition directly from O&#8217;Reilly</a>. You&#8217;ll get a book, and I&#8217;ll get a buck. I do not currently accept direct donations.
+<blockquote><p> O&#8217;Reilly 将和Google Press合作，以各种形式发行本书，包括纸质版， ePub， Mobi，还有 <abbr>DRM</abbr>-free <abbr>PDF</abbr>。本书的付费版本 &#8220;HTML5: Up &amp; Running,&#8221;(有中文版译作《HTML揭秘》) 已经可以购买啦。
+<p>如果你喜欢此介绍，并想用行动来表明对本书的欣赏，你可以 <a href="http://www.amazon.com/HTML5-Up-Running-Mark-Pilgrim/dp/0596806027?ie=UTF8&amp;tag=diveintomark-20&amp;creativeASIN=0596806027">点击此处购买 &#8220;HTML5: Up &amp; Running&#8221;</a> 或者 <a href=http://oreilly.com/catalog/9780596806033> 直接向 O&#8217;Reilly 购买电子版</a>。你将得到本书，而我也能得到一些资金。 我现在不接受任何直接捐款。
 </blockquote>
 </div>
 </div>
