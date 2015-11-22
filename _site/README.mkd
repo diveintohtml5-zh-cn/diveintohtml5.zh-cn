@@ -1,0 +1,81 @@
+
+# Dive Into HTML5 中文翻译
+
+目前国内 HTML5 的中文资讯非常少，网络上也能找到零星的一些不完整的翻译，
+很少能找到完整的翻译，很多也没有详细的翻译进度及计划。最重要的，每个译者
+都只是作为自己的爱好进行，并发布在自己的博客或论坛上，大家的翻译工作都
+散布是不同的角落。
+
+这个项目作为 [Dive Into HTML5](http://diveintohtml5.org/) 的中文翻译计划，
+主要致力于翻译完整的 Dive Into HTML5 这本书，并尽量保证在样式风格上一致，
+和翻译质量上负责。
+
+项目将邀请多位曾经，或者正在翻译这本书的爱好者一起进行，也欢迎各位爱好者
+加入。
+
+## 加入方法
+
+I. 请自行 fork 这个项目，可以逐步 pull 到主干。
+
+1. 登录 github。
+2. 点击这个项目上面的 Fork 按钮。
+3. `git clone git@github.com:${YOUACCOUNT}/diveintohtml5.zh-cn.git`
+4. 翻译。
+5. `git add .`
+6. `git commit -m "UPDATE: somthing."`
+7. `git push origin master`
+
+推荐看 《[Pro Git](http://progit.org/book/zh/)》，这里也可以找到一些
+[相关的资料](http://wiki.hotoo.me/Git.html)。
+
+II. 或者可以邮件告诉我你对这个项目感兴趣，希望加入的话，请告诉我你的 github
+账户 ID。
+
+将你的 ID 加入到 diveintohtml5-zh-cn 组织的成员里之后，你就可以使用自己的账户
+直接 push 到 https://github.com/diveintohtml5-zh-cn/diveintohtml5.zh-cn 项目了，
+无需 Frok。
+
+III. 邮件告诉我们你发现的错误或者任何有异议的内容，我们会认真考虑你的意见，感谢你。
+
+
+## 翻译规范
+* 保留首字母下沉的图片，但翻译要考虑完整的语句。
+* 尽量使用中文标点符号。另外原书中使用的 HTML 实体中，
+    `&#8220;` 对应的是中文左双引号(“)，
+    `&#8221;` 对应的是中文右双引号(”)，
+    `&mdash;` 对应的是中文横线(——)中的单条，
+    前面这些都可以直接使用中文原始符号，而无需使用 HTML 实体。
+    在 Vim 中你可以分别使用以下命令批量替换：
+    `%s/&#8220;/“/g`，`%s/&#8221;/”/g`，和 `%s/&mdash;/—/g`。
+* 原著作者偷懒使用了类似 `&lt;img>` 这样代码来显示标签，我们建议使用完整的 `&lt;img&gt;`。
+    注意：这个不用全局替换。
+* 对于不确定处，请写上 `<small>（商榷：译者的理由）</small>` 这样的标记。
+* 对于第二人称(you)之类的词，考虑是否可以省略，或者使用更合适的代称。
+
+另外，我个人觉得作者有些啰嗦，一句话反复的说，例如第二章里的
+“Images have their own MIME types (image/jpeg for JPEG images, image/png for PNG images, and so on). JavaScript files have their own MIME type. CSS stylesheets have their own MIME type. Everything has its own MIME type. The web runs on MIME types.”，
+“These people are not gods, nor are they flawless. They’re just people. Smart people, to be sure. But just people.”，
+好多的重复性排比（也可以说是一句话反复说 N 遍），可以视情况进行压缩翻译。
+
+
+## 版权
+这份译稿除了原著作者和译者们的荣耀之外，不保留任何版权。**注意：禁止商业出版。**
+这份译稿不考虑印刷出版，只作为一个兴趣项目。如果你不喜欢在显示器上阅读，可以考虑
+自行打印本书，但是禁止商业出版。
+
+欢迎参与，传播、推广与分发。
+
+另外，我已经跟 [diveintohtml5.com](http://diveintohtml5.com/) 的译者联系，
+枯藤昏鸦 同意我们使用他翻译的部分内容，这里感谢他作出的贡献。
+
+
+## See Also
+* [Dive Into HTML5](http://diveintohtml5.org/)
+* [澄净的禅院#HTML5](http://zhaojing.me/?cat=6)
+* [畅游 HTML5(Dive Into HTML5 中文版)](http://www.diveintohtml5.com/)， [畅游 HTML5 （DIVE INTO HTML5 中文版）](http://ioio.name/dive-into-html5-cn.html)
+* [Dive Into HTML5—第一部分（视频和音频）中文](http://www.fuzhijie.me/?p=124)
+* [diveintohtml5.it](https://github.com/alieb/diveintohtml5.it)
+
+原版书的代码可以从这里下载：
+
+    hg clone http://hg.diveintohtml5.org/ diveintohtml5
